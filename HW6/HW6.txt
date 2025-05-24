@@ -1,0 +1,27 @@
+Batch Scripting -cURL Bot
+cURL is a command-line toolfor getting or sending data including files using URL syntax.
+Since cURL uses libcurl, it supports a range of common network protocols, currently including: HTTP, HTTPS, FTP, FTPS, SCP, SFTP, TFTP, LDAP, IMAP, POP3, SMTP and more.
+
+Get the main page from a web-server:curlhttp://www.example.com/
+Get a web page from a server using port 8000:curlhttp://www.example.com:8000/
+Get a file off an FTP server:curl ftp://files.are.secure.com/secrets.txt
+Get a web page and store in a local file with a specific name:curl -o homepage.htmlhttp://www.example.com/
+Get a file from an SSH server using SFTP:curl -u username sftp://example.com/etc/issue
+
+Create a batch file bot for:
+1.
+Extracting the date from the web page: www.timeanddate.com
+2.
+Extracting the IP address from the web page: www.whatismyip.com
+3.
+Extracting the main headline from the web page: www.ynet.co.il
+4.
+Extracting the download link from: www.bugzilla.org
+5.
+Extracting the first ‘Tutorial’ name from: JMeter.apache.org
+6.
+Extracting the names of all NFT course students from: moodle.sce.ac.il
+7.
+Extracting ‘NFT jobs’ from the web page: www.linkedin.com
+8.
+Extracting ‘software non functional testing’ books from: www.amazon.com
