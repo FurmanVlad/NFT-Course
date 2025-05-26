@@ -3,7 +3,7 @@ echo Mission 7: Extracting NFT jobs from linkedin.com
 echo =============================================
 echo.
 
-curl -s https://www.linkedin.com/jobs/search/?keywords=NFT > temp.html
+curl -s https://www.linkedin.com/jobs/search/?keywords=non+functional+test > temp.html
 if %errorlevel% neq 0 (
     echo Error: Failed to download the webpage
     goto :end

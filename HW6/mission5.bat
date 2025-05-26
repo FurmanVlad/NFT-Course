@@ -9,7 +9,7 @@ if %errorlevel% neq 0 (
     goto :end
 )
 
-powershell -Command "$content = Get-Content temp.html -Raw; if ($content -match 'class=\"menu-title\">Tutorials(?:.|\s)*?href=\"([^\"]+)') { Write-Output $matches[1] } else { Write-Output 'No match found' }"
+powershell -Command "$content = Get-Content temp.html -Raw; if ($content -match 'class=\"menu-title\">Tutorials(?:.|\s)*?href=\"\.\/usermanual\/(.*)\.html') { Write-Output $matches[1] } else { Write-Output 'No match found' }"
 
 :end
 if exist temp.html del temp.html

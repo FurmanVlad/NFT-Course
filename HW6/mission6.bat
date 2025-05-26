@@ -12,7 +12,7 @@ if %errorlevel% neq 0 (
 powershell -Command "$content = Get-Content temp.html -Raw; if ($content -match 'class=\"cell c1\" id=\"user-index-participants-32326_r\d+_c1\"[^>]*?>\s*<a[^>]*?>.*?(?:<[^>]*>)*\s*([^<>]+?)\s*<\/a>') { Write-Output $matches[1] } else { Write-Output 'No match found' }"
 
 :end
-if exist temp.html del temp.html
+@REM if exist temp.html del temp.html
 echo.
 echo Press any key to exit...
 pause > nul 
